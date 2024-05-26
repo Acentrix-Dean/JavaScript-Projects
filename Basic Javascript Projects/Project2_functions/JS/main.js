@@ -3,3 +3,7 @@ function My_First_Function() { //Create and name the function
     str += " Can you read it?" //concatenate a new string with our variable 
     document.getElementById("Button_Text").innerHTML = str; //find the element with ID of "Button_Text" and change the html to the value of our variable
 }
+
+function hideElement() {
+    document.getElementById('disappear').style.display = 'none';
+}
