@@ -1,4 +1,4 @@
-/* Timer function */
+// Timer function
 function countdown() {
     var seconds = document.getElementById('seconds').value;
 
@@ -15,7 +15,7 @@ function countdown() {
     tick();
 }
  
-/* Slideshow */
+// Slideshow
 let slideIndex = 1; /* Sets variable slideIndex to 1 */
 showSlides(slideIndex); /* creates function and passes slideIndex through the function */
 
@@ -29,7 +29,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-/* Function that runs */
+// Function that runs
 function showSlides(n) {
   let i; /* Create variable i */
   let slides = document.getElementsByClassName("mySlides"); /* make the value of the variable slides equal to the element with the class name 'mySlides' */
