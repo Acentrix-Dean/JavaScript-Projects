@@ -44,7 +44,7 @@ function getTopping(runningTotal, text1) {
     // For loop that loops through the toppingArray and checks if the value at each index is checked and then add's the checked values to the selectedTopping and text1 variables
     for (var j = 0; j < toppingArray.length; j++) {
         // Checks selectedSize variable and if no pizza size is selected it will not add any toppings
-        if (toppingArray[j].checked && selectedSize !== ' ') {
+        if (toppingArray[j].checked && !selectedSize) {
             selectedTopping.push(toppingArray[j].value);
             console.log('selected topping item: ('+ toppingArray[j].value +')');
             text1 = text1 + toppingArray[j].value + '<br>';
