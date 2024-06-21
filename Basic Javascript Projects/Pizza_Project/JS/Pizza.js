@@ -1,3 +1,5 @@
+// selectedSize is made a global variable so it can be used in getTopping function
+var selectedSize;
 function getReceipt() {
     // This initializes our string so it can get passed from function to function, growing line by line into a full receipt.
     var text1 = "<h3>You Ordered: </h3>";
@@ -7,7 +9,6 @@ function getReceipt() {
     // For loop to check which size is selected and assign a number to the sizeTotal variable
     for (var i = 0; i < sizeArray.length; i++) { 
         if (sizeArray[i].checked) {
-            // selectedSize is made a global variable so it can be used in getTopping function
             selectedSize = sizeArray[i].value;
             text1 = text1 + selectedSize + '<br>';
         }
