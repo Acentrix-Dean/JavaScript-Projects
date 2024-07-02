@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<script>
+// function fires when the DOM is ready
+$(document).ready(function() {
+    // Targets html and adds the following to it
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    // Targets id '2' and change the color to red
+    $("#2").css({"color":"red"});
+    // Targets id '3' and hides any h1 tags when the element with an id of 3 is clicked
+    $("#3").click(function() {
+        $("h1").hide();
+    });
+});
+</script>
+</html>
